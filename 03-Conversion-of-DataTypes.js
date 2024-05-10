@@ -15,3 +15,7 @@ console.log(Number(adult)); //true=1; false=0
 let score3 = "33abc";
 console.log(typeof Number(score3));  //number => it  will convert to number but value will be NaN. 
 console.log(Number(score3));    //NaN  i.e Not a Number
+
+let score4 = null;
+console.log(typeof Number(score3));  //number => it  will convert to number but value will be NaN. 
+console.log(Number(score3));    //NaN  i.e Not a Number
