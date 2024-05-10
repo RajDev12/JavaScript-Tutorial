@@ -24,4 +24,25 @@
 - `var` is outdated due to scope issues. `let` and `const` are commonly used in modern JavaScript.
 - Attempting to reassign a value to a `const` variable results in an error.
 
+
+
+# Data Types in JavaScript
+
+- **Number**: Represents numerical values. In JavaScript, numbers are represented as 64-bit floating-point numbers, with precision up to 2 to the power 53.
+- **BigInt**: Used for representing integers of arbitrary length.
+- **String**: Represents textual data enclosed within quotes.
+- **Boolean**: Represents logical values - `true` or `false`.
+- **null**: Represents the intentional absence of any object value.
+- **undefined**: Indicates that a variable has been declared but not assigned any value.
+
+## Additional Notes
+
+- The `alert()` function is specific to the browser environment and is used to display an alert dialog.
+- Objects are also a data type in JavaScript, but they are not explicitly demonstrated in this code snippet.
+
+## Console Output
+
+- Outputs the string `"hi"` to the console.
+- Logs the data types of variables `a`, `null`, and `undefined`, which are `"number"`, `"object"`, and `"undefined"` respectively.
+
 ---To be Continued----
