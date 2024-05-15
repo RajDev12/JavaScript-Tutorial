@@ -1,8 +1,13 @@
-let a=2;
-let b="";
-let loggedIn='True';
-let marks=null;
+let a = 2;
+let b = "";
+let loggedIn = 'True';
+let marks = null;
 let age;
+const bigNum = 12345678765n;
+// console.log("hi")
+
+// console.log(typeof a)
+// console.log(typeof null)
 //  alert("this is a alert") //This only interpreted by browser
 
 //DataTypes
@@ -11,16 +16,22 @@ let age;
 //2.  bigint
 //3.String
 //4.boolean
-
 //5.null =standalone value/empty nnot 0
 //6. undefined
 //7.Symbol  = uniquely define variable
+const id = Symbol('123');
+const anotherId = Symbol('123');
+console.log(id === anotherId)    //false
 
 //Non-Primitive / Reference type = address is passed , any changes via new variable will reflect to original one also
 //Arrays
 //Functions
-// Objects are also a datatpe
-console.log("hi")
-
-console.log(typeof a)
-console.log(typeof null)
+// Objects 
+const myArray = ["1st", "2nd", "3rd"];
+let myObj = {
+    name: "Dev",
+    city: "Mohali"
+}
+const myFunction = function(){
+    console.log("I am a function");
+}
