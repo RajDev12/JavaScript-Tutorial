@@ -34,6 +34,28 @@
 - **Boolean**: Represents logical values - `true` or `false`.
 - **null**: Represents the intentional absence of any object value.
 - **undefined**: Indicates that a variable has been declared but not assigned any value.
+## Summary: Non-Primitive / Reference Types
+
+Non-primitive or reference types involve passing the address (or reference) of the variable to a function or operation. Any changes made to the variable via a new variable will reflect on the original one as well. This behavior is observed in arrays, functions, and objects, as they are all non-primitive data types.
+
+### Arrays
+
+- Arrays are passed by reference when used as function arguments.
+- Modifications made to the array within a function will affect the original array outside the function.
+
+### Functions
+
+- Functions are treated as first-class citizens in many programming languages.
+- When you pass a function as an argument to another function, you are passing a reference to that function.
+
+### Objects
+
+- Objects are complex data types consisting of key-value pairs.
+- When you pass an object to a function or assign it to another variable, you are passing a reference to the object in memory.
+- Changes made to the object via the new variable will be reflected in the original object.
+
+In summary, non-primitive or reference types exhibit pass by reference behavior, where changes made via a new variable will affect the original one.
+
 
 ## Additional Notes
 
