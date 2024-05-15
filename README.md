@@ -27,6 +27,7 @@
 
 
 # Data Types in JavaScript
+##Primitive
 
 - **Number**: Represents numerical values. In JavaScript, numbers are represented as 64-bit floating-point numbers, with precision up to 2 to the power 53.
 - **BigInt**: Used for representing integers of arbitrary length.
@@ -34,7 +35,8 @@
 - **Boolean**: Represents logical values - `true` or `false`.
 - **null**: Represents the intentional absence of any object value.
 - **undefined**: Indicates that a variable has been declared but not assigned any value.
-## Summary: Non-Primitive / Reference Types
+- **Symbol**: Uniquely define a variable, return type is also symbol
+## Non-Primitive / Reference Types
 
 Non-primitive or reference types involve passing the address (or reference) of the variable to a function or operation. Any changes made to the variable via a new variable will reflect on the original one as well. This behavior is observed in arrays, functions, and objects, as they are all non-primitive data types.
 
