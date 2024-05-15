@@ -6,7 +6,7 @@ let age;
 const bigNum = 12345678765n;
 // console.log("hi")
 
-// console.log(typeof a)
+console.log(typeof bigNum)
 // console.log(typeof null)
 //  alert("this is a alert") //This only interpreted by browser
 
@@ -16,7 +16,7 @@ const bigNum = 12345678765n;
 //2.  bigint
 //3.String
 //4.boolean
-//5.null =standalone value/empty nnot 0
+//5.null =standalone value/empty not 0/ it is treated as object 
 //6. undefined
 //7.Symbol  = uniquely define variable
 const id = Symbol('123');
@@ -35,3 +35,6 @@ let myObj = {
 const myFunction = function(){
     console.log("I am a function");
 }
+console.log(typeof myFunction)  //object function 
+console.log(typeof myObj)  //object 
+console.log(typeof myArray)  //object 
