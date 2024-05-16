@@ -1,7 +1,5 @@
 //All primitive data types are stored in the stack memory
 
-
-
 let a=3;
 let b=a;
 //a copy of value of 'a' is passed to be
