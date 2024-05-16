@@ -69,4 +69,23 @@ In summary, non-primitive or reference types exhibit pass by reference behavior,
 - Outputs the string `"hi"` to the console.
 - Logs the data types of variables `a`, `null`, and `undefined`, which are `"number"`, `"object"`, and `"undefined"` respectively.
 
+## Memory Allocation in JavaScript
+
+This project explores the concept of memory allocation in JavaScript, focusing on the distinction between primitive data types and non-primitive (reference) types.
+
+### Key Points Covered:
+
+1. **Primitive Data Types**: Primitive data types (e.g., numbers, strings, booleans) are stored directly in the stack memory. When a primitive value is assigned to a variable, a copy of that value is passed, and any changes to the copy do not affect the original value.
+
+2. **Example**: In the provided code snippet, variables `a` and `b` demonstrate this behavior with primitive data types. When `b` is assigned the value of `a`, it creates a copy of the value, and subsequent changes to `b` do not affect `a`.
+
+3. **Non-Primitive (Reference) Types**: Non-primitive or reference types (e.g., objects) are stored in the heap memory. When a non-primitive value is assigned to a variable, the reference address of the object in memory is passed. Therefore, both variables point to the same object, and changes made via one variable will reflect in the other.
+
+4. **Example**: The code snippet also demonstrates this behavior with objects `user1` and `user2`. When `user2` is assigned the value of `user1`, they both reference the same object in memory. Subsequent changes to `user2` also affect `user1`.
+
+### Conclusion:
+
+Understanding the differences between primitive and non-primitive data types in terms of memory allocation is crucial for writing efficient and bug-free JavaScript code. By grasping these concepts, developers can effectively manage memory usage and avoid unexpected behavior in their applications.
+
+
 ---To be Continued----
