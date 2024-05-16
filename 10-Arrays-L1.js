@@ -43,3 +43,38 @@ console.log("After Slice original arr", myArr);
 const myn2 = myArr.splice(1, 3)
 console.log("after splice original arr", myArr);  //Splice changes the original array
 console.log(myn2);
+//============================================================//
+
+const marvel_heros = ["thor", "Ironman", "spiderman"]
+const dc_heros = ["superman", "flash", "batman"]
+
+// marvel_heros.push(dc_heros)   =["thor", "Ironman", "spiderman", ["superman", "flash", "batman"]]
+
+// console.log(marvel_heros);
+// console.log(marvel_heros[3][1]);
+
+// const allHeros = marvel_heros.concat(dc_heros) =returns a new array
+// console.log(allHeros);
+
+
+//Spread operator
+const all_new_heros = [...marvel_heros, ...dc_heros]
+
+// console.log(all_new_heros);
+
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+const real_another_array = another_array.flat(Infinity) //we can pass a number of depth also
+console.log(real_another_array);
+
+
+
+console.log(Array.isArray("Hitesh"))  //false
+console.log(Array.from("Hitesh"))   //converts to a char array 
+console.log(Array.from({name: "hitesh"})) // interesting =try to make array from the keyValue
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3));
