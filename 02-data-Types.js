@@ -22,6 +22,7 @@ console.log(typeof bigNum)
 const id = Symbol('123');
 const anotherId = Symbol('123');
 console.log(id === anotherId)    //false
+console.log(typeof id)    //Symbol
 
 //Non-Primitive / Reference type = address is passed , any changes via new variable will reflect to original one also
 //Arrays
@@ -38,3 +39,5 @@ const myFunction = function(){
 console.log(typeof myFunction)  //object function 
 console.log(typeof myObj)  //object 
 console.log(typeof myArray)  //object 
+
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
