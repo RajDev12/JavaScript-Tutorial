@@ -32,8 +32,8 @@ function loginUserMessage(username){
     }
     return `${username} just logged in successfully`;
 }
-console.log(loginUserMessage("Dev"));
-console.log(loginUserMessage());   //undefined
+// console.log(loginUserMessage("Dev"));
+// console.log(loginUserMessage());   //undefined
 
 function loginUserMessage(username="Dev"){ // default  parameter
     // if(username === undefined){
@@ -46,5 +46,35 @@ function loginUserMessage(username="Dev"){ // default  parameter
     }
     return `${username} just logged in successfully`;
 }
+
+
+
+//Passing multiple parameter inside function
+function calculateCartPrice(num1) {
+    return num1;
+}
+console.log(calculateCartPrice(1,2,3,4,5));
+
+
+function calculateCartPrice1(...num1) {   //rest operator
+    return num1;
+}
+console.log(calculateCartPrice1(1,2,3,4,5));
+
+function calculateCartPrice2(num1, num2, ...num3) {
+    return num3;
+}
+console.log(calculateCartPrice2(1,2,3,4,5));
+
+
+//Passing anyObject inside function
+const obj={
+    name : "Dev",
+    price: "399"
+}
+function objFunc(anyObject){  //must check for availabality of that variable inside object
+    console.log(`Usernamr is ${anyObject.name} and price is ${anyObject.price}`)
+}
+objFunc(obj)
 
      
