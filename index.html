@@ -78,11 +78,16 @@
        //Selecting All tags/childs
        const allChild= document.querySelector('ul');
        console.log(allChild);
-       const turnGreen = allChild.querySelector('li');
+       const turnGreen = allChild.querySelector('li'); //first list
        turnGreen.style.backgroundColor='green';
+       //change the inner text of turn greens
+       turnGreen.innerText= 'this is green'
 
-       const allChild1= document.querySelectorAll('ul li');
-       console.log(allChild1);  //NodeList(4) [li, li, li, li]
+       const childList= document.querySelectorAll('li');
+       console.log(childList);  //NodeList(4) [li, li, li, li]
+       //change the color of 2nd list to red
+       //NodeList is not an array, but it works with some array properties
+       childList[1].style.color = 'red';
 
        //first child
        const firstChild = document.querySelector('ul:first-child');
