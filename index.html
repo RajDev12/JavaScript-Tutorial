@@ -26,10 +26,10 @@
         <input type="password" name="" id=""> -->
 
         <ul>
-            <li>1</li>
-            <li>This is 2nd list</li>
-            <li>3</li>
-            <li>4</li>
+            <li class="item">1</li>
+            <li class="item">This is 2nd list</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
         </ul>
 
     </div>
@@ -89,12 +89,34 @@
        //NodeList is not an array, but it works with some array properties
        childList[1].style.color = 'red';
 
-       //first child
-       const firstChild = document.querySelector('ul:first-child');
+       //OR use forEach to loop through the nodeList
+       childList.forEach( (item) => {
+                item.style.color = 'red';
+       })
 
-       //2nd child
-       const secondChild = document.querySelector('ul li:nth-child(2)');
-       console.log(secondChild);
+       //html collection of all classes opf item
+       const items = document.getElementsByClassName('item');
+       console.log(items);  //HTMLCollection(4) [li.item, li.item, li.item, li.item]
+       //in order to loop through we must convert the collection to array
+       const itemsArr = Array.from(items)
+       console.log(itemsArr);
+
+    //    itemsArr.forEach(function (){
+
+    //    })
+
+
+
+
+
+
+
+    //    //first child
+    //    const firstChild = document.querySelector('ul:first-child');
+
+    //    //2nd child
+    //    const secondChild = document.querySelector('ul li:nth-child(2)');
+    //    console.log(secondChild);
 
 
 
