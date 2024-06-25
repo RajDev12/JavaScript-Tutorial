@@ -12,4 +12,8 @@ let age; //  o/p=> undefined
 //it is like the final keyword in java
 
 console.log(myName);
+
+
+
+
 console.table([accountId, myName, cgpa, marks, age]);
