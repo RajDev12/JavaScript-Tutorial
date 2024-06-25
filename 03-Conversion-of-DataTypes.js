@@ -1,15 +1,18 @@
+// EXplicit conversion = converted by the user
 let score = 33;
 console.log(typeof score); //number
-console.log(typeof(String(score)))  //string  
+var a = String(score) 
+console.log(a) 
+console.log(typeof a)  //string  
 
-let score2 = "33";
+let score2 = "33";  
 console.log(typeof score2); //String
 
 let scoreInNumber = Number(score2); //Here Number is a class
 console.log(typeof scoreInNumber); //number in smallcase
 
 let adult = true;
-console.log(typeof adult);
+console.log(typeof adult);//boolean
 console.log(Number(adult)); //true=1; false=0
 
 //String to number conversion
@@ -24,7 +27,7 @@ console.log(Number(score4));    //NaN  i.e Not a Number
 let score5 = undefined;
 console.log(typeof Number(score5));  //number => it  will convert to number but value will be NaN. 
 console.log(Number(score5));
-
+//iiiiiiii
 let life=1;
 life=Boolean(life)
 console.log(life)   //true
