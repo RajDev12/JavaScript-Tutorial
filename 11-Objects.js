@@ -1,13 +1,14 @@
 // Singleton objects= Only one instance of the class can be possible. 
 // FOr eg= Single databse object is used throughout the program
 // //Object literals
-// const users = {
-//     u_name: "Dev",  //entries
-//     age: 23,
-//     email: "rjnath98@gmail.com",
-//     isAdult: false,
-//     loggedInDays: ["Mon", "tue", "thu", "feb"]
-// }
+const users = {
+    u_name: "Dev",  //entries
+   
+    age: 23,
+    email: "rjnath98@gmail.com",
+    isAdult: false,
+    loggedInDays: ["Mon", "tue", "thu", "feb"]
+}
 
 // users.email = "Mridhu@gmail.com"
 // console.log(users.email);
