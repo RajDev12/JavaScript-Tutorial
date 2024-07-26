@@ -1,14 +1,14 @@
-// // array =multiple datatype as a list 
-// //it is dynamic in size
-// const myArr = [4, 54, 50, 65, 48, 75]
-// // myArr[2]=6
-// // console.log(myArr);
-// // const newArr=myArr;
-// //newArr will have a shallow copy 
-// //myArr and newArr will share the sam reference
-// // newArr[0]=10;
-// // console.log(newArr[0])
-// const myHeors = ["shaktiman", "naagraj",1 , 2,true]
+// array =multiple datatype as a list 
+//it is dynamic in size
+const myArr = [4, 54, 50, 65, 48, 75]
+// myArr[2]=6
+// console.log(myArr);
+// const newArr=myArr;
+//newArr will have a shallow copy 
+//myArr and newArr will share the sam reference
+// newArr[0]=10;
+// console.log(newArr[0])
+const myHeors = ["shaktiman", "naagraj",1 , 2,true]
 
 // const myArr2 = new Array(1, 2, 3, 4)
 // // console.log(myArr[1]);
@@ -115,5 +115,18 @@ let score3 = 300
 let arrayFromInt = Array.of(score1,score2,score3)
 console.log(arrayFromInt);
 
-let a=1
-console.log(Array.of(a,2,3,4,5));
+arrayFromInt[2]= 500;
+console.log(arrayFromInt.slice(0,1))
+
+let a="this is the basic string."
+let n=9 
+let n1= "This is another data of the datatype string"
+console.log(Array.of(a,n,n1,2,3,4,5));
+
+
+const num=[2,5,4,6,9,5,2,4,6]
+num.lastIndexOf(2)
+num.lastIndexOf(2,3)
+num.lastIndexOf(2, -2)
+// you can't find Nan using lastIndexof
+num.lastIndexOf(Nan)  // o/p=-1
