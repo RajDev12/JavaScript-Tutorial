@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JS classList Demo</title>
+<style>
+    .highlight {
+        background: yellow;
+    }
+</style>
+</head>
+<body>
+    <div id="info" class="disabled">Something very important!</div>
+    
+    <script>
+    // Selecting element
+    let elem = document.getElementById("info");
+     
+    elem.classList.add("hide");  // Add a new class
+    elem.classList.add("note", "highlight");  // Add multiple classes
+    elem.classList.remove("hide"); // Remove a class
+    elem.classList.remove("disabled", "note"); // Remove multiple classes
+    elem.classList.toggle("visible"); // If class exists remove it, if not add it
+     
+    // Determine if class exist
+    if(elem.classList.contains("highlight")) {
+        alert("The specified class exists on the element.");
+    }
+    </script>
+</body>
+</html>
