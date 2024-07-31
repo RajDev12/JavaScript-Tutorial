@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mark">This is a paragraph of text.</p>
+    <p>This is another paragraph of text.</p>
+    <script>
+    // Selecting element with id mark 
+    let match = document.getElementById("mark");
+    console.log(match);
+    // Highlighting element's background
+    match.style.color = "yellow";
+    match.className="newClass"   
+    match.className = "note";  // Add or replace all classes with note class
+    match.className += " highlight";
+    </script>
+</body>
+</html>
