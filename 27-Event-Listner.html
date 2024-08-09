@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- <button id="myBtn" ondblclick="secondFunction()" onclick="firstFunction()" >Click Me</button> -->
+    <button id="myBtn">Click Me</button>
+
+
+    <div id="result"></div>
+
+    <script>
+        const btn = document.getElementById("myBtn")
+        const body = document.body
+        function sizeOfWindow(){
+            let w= window.innerWidth;
+            let h = window.innerHeight
+            document.getElementById("result").innerHTML = `Width: ${w}px, Height: ${h}px`
+        }
+        
+        // window.addEventListener("resize", sizeOfWindow)
+        // btn.addEventListener("click", sizeOfWindow)
+
+        // Defining custom functions
+        function firstFunction() {
+            alert("The first function executed successfully!");
+        }
+
+        function secondFunction() {
+            alert("The second function executed successfully");
+        }
+        function changeBG(){
+            body.style.backgroundColor = "Red";
+            btn.style.cursor ="pointer";
+        }
+        function normalBG(){
+            btn.style.backgroundColor="white";
+        }
+        
+        btn.addEventListener("mouseover", changeBG)
+        btn.addEventListener("mouseout", normalBG)
+        btn.addEventListener((e)=>{
+            if(e.target == btn){
+                alert("Button clicked!")
+            }
+        })
+
+        // btn.removeEventListener("mouseout", normalBG) 
+
+        // Q. Change the cursor style when i am mouseover and mouseout on the button?
+
+
+
+
+
+
+        // btn.onclick=firstFunction
+        // btn.addEventListener("click", firstFunction)
+        // btn.addEventListener("click", secondFunction)
+
+
+
+
+        //     In addition to the event type and listener function parameter the addEventListener() accepts one more Boolean parameter useCapture. This is an optional parameter which specifies whether to use event bubbling or event capturing. Its basic syntax is:
+
+        // target.addEventListener(event, function, useCapture);
+        // Event bubbling and capturing are two ways of propagating events. We will learn about event propagation in detail in the upcoming chapter.
+
+
+
+
+    </script>
+</body>
+
+</html>
